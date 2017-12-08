@@ -1,13 +1,15 @@
-package onetoone;
+package onetomany;
 
-public class Student {
+
+public class OneToManyStudent {
 	
 	private int studentId;
 	private String name;
-	private City city;
+	private OneToManyCity city;
 	
 	
-	public Student(String name, City city) {
+	public OneToManyStudent(int studentId, String name, OneToManyCity city) {
+		this.studentId = studentId;
 		this.name = name;
 		this.city = city;
 	}
@@ -33,12 +35,12 @@ public class Student {
 	}
 	
 	
-	public City getCity() {
+	public OneToManyCity getCity() {
 		return city;
 	}
 	
 	
-	public void setCity(City city) {
+	public void setCity(OneToManyCity city) {
 		this.city = city;
 	}
 }

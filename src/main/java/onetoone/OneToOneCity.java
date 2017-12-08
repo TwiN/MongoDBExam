@@ -1,13 +1,15 @@
 package onetoone;
 
-public class City {
+
+public class OneToOneCity {
 	
 	private int cityId;
 	private String name;
-	private Student student;
+	private OneToOneStudent student;
 	
 	
-	public City(String name, Student student) {
+	public OneToOneCity(int cityId, String name, OneToOneStudent student) {
+		this.cityId = cityId;
 		this.name = name;
 		this.student = student;
 	}
@@ -33,12 +35,12 @@ public class City {
 	}
 	
 	
-	public Student getStudent() {
+	public OneToOneStudent getStudent() {
 		return student;
 	}
 	
 	
-	public void setStudent(Student student) {
+	public void setStudent(OneToOneStudent student) {
 		this.student = student;
 	}
 }
